@@ -29,7 +29,8 @@ Inspector. La vida actual se reinicia a la vida máxima al comenzar la partida.
   ataque. Su movimiento está limitado a X=44–66.
 - El filtro de humo (`playerHasSmokeFilter`) evita el daño del gas. La zona
   visual (`toxicGasZone`) es opcional; si no se asigna, el ataque todavía puede
-  hacer daño.
+  hacer daño. Al tocar un collider del objeto `mascaraGas` (o de un hijo suyo),
+  el jugador activa el filtro del jefe; el collider puede ser trigger o sólido.
 - `ApplyValveStun` permite que otro componente aturda al jefe durante un tiempo.
 
 ## Configuración en Unity

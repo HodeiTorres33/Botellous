@@ -74,6 +74,38 @@ public class PlayerMov : MonoBehaviour
         anim.SetBool(IsGroundedHash, isGrounded);
     }
 
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        TryCollectGasMask(other);
+    }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        TryCollectGasMask(collision.otherCollider);
+    }
+
+    // Notifica al jefe cuando el jugador entra en contacto con la máscara.
+    private void TryCollectGasMask(Collider2D other)
+    {
+        for (Transform current = other.transform; current != null; current = current.parent)
+        {
+            if (current.name != "mascaraGas")
+            {
+                continue;
+            }
+
+            BossComportamiento boss = FindAnyObjectByType<BossComportamiento>(FindObjectsInactive.Include);
+            if (boss == null)
+            {
+                Debug.LogError("No se encontró un BossComportamiento para registrar la máscara de gas.", this);
+                return;
+            }
+
+            boss.GivePlayerSmokeFilter();
+            return;
+        }
+    }
+
     // Aplica el movimiento y comprueba el contacto con el suelo en cada paso físico.
     private void FixedUpdate()
     {

@@ -255,6 +255,11 @@ public class BossComportamiento : MonoBehaviour
         }
     }
 
+    public void GivePlayerSmokeFilter()
+    {
+        playerHasSmokeFilter = true;
+    }
+
     // Busca al jugador dentro del área del ataque y le aplica daño.
     private void DamagePlayerInRange(Vector2 center, float radius, float damage)
     {
