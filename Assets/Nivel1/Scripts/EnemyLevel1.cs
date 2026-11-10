@@ -1,4 +1,5 @@
 using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 
 /// <summary>
@@ -108,14 +109,25 @@ public abstract class EnemyLevel1 : MonoBehaviour, IDamageable
         Destroy(gameObject);
     }
 
-    // Según la probabilidad, suelta uno de sus objetos posibles (daga o corazón)
+    // Según la probabilidad, suelta uno de sus objetos posibles (daga o corazón).
+    // Si el jugador ya tiene la daga no se suelta otra, porque su bufo no se acumula.
     void DropLoot()
     {
         if (possibleDrops == null || possibleDrops.Length == 0) return;
         if (Random.value > dropChance) return;
 
-        var drop = possibleDrops[Random.Range(0, possibleDrops.Length)];
-        if (drop != null) Instantiate(drop, transform.position, Quaternion.identity);
+        List<GameObject> opciones = new List<GameObject>();
+        foreach (GameObject posible in possibleDrops)
+        {
+            if (posible == null) continue;
+            bool esDaga = posible.GetComponent<DamageItem>() != null;
+            if (esDaga && PlayerMov.TieneDaga) continue;
+            opciones.Add(posible);
+        }
+        if (opciones.Count == 0) return;
+
+        GameObject drop = opciones[Random.Range(0, opciones.Count)];
+        Instantiate(drop, transform.position, Quaternion.identity);
     }
 
     // ---------------- DAÑO POR CONTACTO ----------------

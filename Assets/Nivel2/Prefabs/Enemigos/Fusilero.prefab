@@ -213,6 +213,8 @@ MonoBehaviour:
   distanciaHuir: 2.5
   velocidadBala: 9
   puntaFusil: {x: 2.3, y: 1.78}
+  sonidoAtaque: {fileID: 8300000, guid: 0e41f393b6cf442d8d555ef7af4e3f7a, type: 3}
+  volumenAtaque: 0.6
 --- !u!1001 &2039746582230040517
 PrefabInstance:
   m_ObjectHideFlags: 0

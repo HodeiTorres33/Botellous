@@ -37,6 +37,11 @@ public class Enemigo : MonoBehaviour
     // Posición de la punta del fusil respecto a los pies (mirando a la derecha)
     public Vector2 puntaFusil = new Vector2(2.3f, 1.78f);
 
+    // Sonido del golpe o del disparo (suena en el fotograma del ataque)
+    public AudioClip sonidoAtaque;
+    [Range(0f, 1f)] public float volumenAtaque = 0.6f;
+    private AudioSource efectos;
+
     // Componentes
     private Rigidbody2D rb;
     private Animator anim;
@@ -62,6 +67,14 @@ public class Enemigo : MonoBehaviour
         col = GetComponent<Collider2D>();
 
         posicionInicialX = transform.position.x;
+
+        // Altavoz para el sonido de ataque (2D, se oye igual en toda la pantalla)
+        if (sonidoAtaque != null)
+        {
+            efectos = gameObject.AddComponent<AudioSource>();
+            efectos.playOnAwake = false;
+            efectos.spatialBlend = 0f;
+        }
 
         // Nos guardamos la vida con la que empieza para saber cuánto ocupa la barra llena
         vidaMaxima = vida;
@@ -257,6 +270,11 @@ public class Enemigo : MonoBehaviour
         if (jugador == null || muerto)
         {
             return;
+        }
+
+        if (efectos != null)
+        {
+            efectos.PlayOneShot(sonidoAtaque, volumenAtaque);
         }
 
         if (tipo == TipoEnemigo.Fusilero)

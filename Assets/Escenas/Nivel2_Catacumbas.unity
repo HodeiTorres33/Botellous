@@ -26823,6 +26823,8 @@ MonoBehaviour:
   attackHeight: 3.38
   attackCooldown: 0.1
   damageNivel2: 1
+  sonidoAtaque: {fileID: 8300000, guid: 095bdad9c68b481db6dba536c6302589, type: 3}
+  volumenAtaque: 0.7
 --- !u!61 &827959249
 BoxCollider2D:
   m_ObjectHideFlags: 0

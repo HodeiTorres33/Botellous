@@ -21,6 +21,9 @@ public class PlayerMov : MonoBehaviour
     [SerializeField] private int damageNivel2 = 1;
     // Daño que suma cada daga (DamageItem); sirve para saber cuántas dagas lleva el jugador
     [SerializeField] private float danoPorDaga = 5f;
+    // Sonido del espadazo. Solo está puesto en el nivel 2; si se deja vacío no suena nada.
+    [SerializeField] private AudioClip sonidoAtaque;
+    [SerializeField, Range(0f, 1f)] private float volumenAtaque = 0.7f;
 
     // Daño extra de las dagas. Es "static" para que no se borre al cambiar de escena
     // y así las mejoras del nivel 1 sigan en los niveles 2 y 3.
@@ -37,6 +40,8 @@ public class PlayerMov : MonoBehaviour
     private Animator anim;
     private Collider2D bodyCollider;
     private SpriteRenderer spriteRenderer;
+    // Altavoz para los efectos del jugador (se crea solo si hay algún sonido asignado)
+    private AudioSource efectos;
     // Enemigos ya golpeados en el ataque actual, para no dañar dos veces al mismo con un golpe
     private readonly HashSet<GameObject> enemiesHitThisAttack = new HashSet<GameObject>();
     private float horizontalInput;
@@ -74,6 +79,14 @@ public class PlayerMov : MonoBehaviour
         anim = GetComponent<Animator>();
         bodyCollider = GetComponent<Collider2D>();
         spriteRenderer = GetComponent<SpriteRenderer>();
+
+        if (sonidoAtaque != null)
+        {
+            efectos = gameObject.AddComponent<AudioSource>();
+            efectos.playOnAwake = false;
+            // 0 = sonido 2D: se oye igual esté donde esté la cámara
+            efectos.spatialBlend = 0f;
+        }
     }
 
     // Lee los controles y actualiza la orientación y las animaciones.
@@ -106,6 +119,11 @@ public class PlayerMov : MonoBehaviour
             // La animación de ataque llama a OnAnimationAttackHit en el momento del golpe
             anim.SetTrigger(AttackHash);
             nextAttackTime = Time.time + attackCooldown;
+
+            if (efectos != null)
+            {
+                efectos.PlayOneShot(sonidoAtaque, volumenAtaque);
+            }
         }
 
         // Gira el sprite hacia donde anda
@@ -149,11 +167,23 @@ public class PlayerMov : MonoBehaviour
         jumpRequested = false;
     }
 
+    // true si el jugador ya ha cogido una daga (en este nivel o en uno anterior)
+    public static bool TieneDaga
+    {
+        get { return danoExtra > 0f; }
+    }
+
     // La daga del nivel 1 (DamageItem) sube el daño y lo guarda para los siguientes niveles.
+    // El bufo no se acumula: solo cuenta la primera daga; las demás no hacen nada.
     public void AddDamage(float amount)
     {
+        if (TieneDaga)
+        {
+            return;
+        }
+
         attackDamage += amount;
-        danoExtra = danoExtra + amount;
+        danoExtra = amount;
     }
 
     // Evento del clip de ataque: daña una vez por golpe a lo que haya delante del jugador:
