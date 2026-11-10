@@ -1,0 +1,1172 @@
+fileFormatVersion: 2
+guid: 2b64808e4e10a6e41b3112f1da2a8b5b
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 6611063975212234208
+    second: botella_0
+  - first:
+      213: 3839385718330263570
+    second: botella_1
+  - first:
+      213: 1407627368247810368
+    second: botella_2
+  - first:
+      213: -8179417766470997884
+    second: botella_3
+  - first:
+      213: -1624101180269291343
+    second: botella_4
+  - first:
+      213: -6166589306588630506
+    second: botella_5
+  - first:
+      213: 7392801299008092144
+    second: botella_6
+  - first:
+      213: 5494166355275299327
+    second: botella_7
+  - first:
+      213: -937086326680320175
+    second: botella_8
+  - first:
+      213: 178511795394216985
+    second: botella_9
+  - first:
+      213: 1671758309321299304
+    second: botella_10
+  - first:
+      213: -7996605835045299946
+    second: botella_11
+  - first:
+      213: -2438912840998009367
+    second: botella_12
+  - first:
+      213: 6331308028398952380
+    second: botella_13
+  - first:
+      213: 2171183663802967556
+    second: botella_14
+  - first:
+      213: -3413895029715279809
+    second: botella_15
+  - first:
+      213: 1208914628844559661
+    second: botella_16
+  - first:
+      213: 5187022094479720122
+    second: botella_17
+  - first:
+      213: -1218016962235219446
+    second: botella_18
+  - first:
+      213: 1735266225170495067
+    second: botella_19
+  - first:
+      213: -4303370647615482025
+    second: botella_20
+  - first:
+      213: -7416241601408090379
+    second: botella_21
+  - first:
+      213: -6351370265301599953
+    second: botella_22
+  - first:
+      213: -4913882165778409786
+    second: botella_23
+  - first:
+      213: 1454464246535851264
+    second: botella_24
+  - first:
+      213: 3429856577637532102
+    second: botella_25
+  - first:
+      213: 3423753155568210482
+    second: botella_26
+  - first:
+      213: 459101598758614559
+    second: botella_27
+  - first:
+      213: 6306027908135646189
+    second: botella_28
+  - first:
+      213: 291734708387561940
+    second: botella_29
+  - first:
+      213: 5479939922079225760
+    second: botella_30
+  - first:
+      213: 3451329437656570917
+    second: botella_31
+  - first:
+      213: 3976280966783448487
+    second: botella_32
+  - first:
+      213: -1007645661817458854
+    second: botella_33
+  - first:
+      213: 2128763766844103434
+    second: botella_34
+  - first:
+      213: -7412518349107368457
+    second: botella_35
+  - first:
+      213: 2841300773045981033
+    second: botella_36
+  - first:
+      213: -5392986026802537026
+    second: botella_37
+  - first:
+      213: 8384517763243460598
+    second: botella_38
+  - first:
+      213: -2439084666116354894
+    second: botella_39
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationMethod: 0
+  spriteTessellationDetail: -1
+  spriteGeometrySubdivision: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: botella_0
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 250
+        width: 93
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0e538e598a73fbb50800000000000000
+      internalID: 6611063975212234208
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: botella_1
+      rect:
+        serializedVersion: 2
+        x: 167
+        y: 228
+        width: 80
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 21888c808fc384530800000000000000
+      internalID: 3839385718330263570
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: botella_2
+      rect:
+        serializedVersion: 2
+        x: 316
+        y: 222
+        width: 31
+        height: 93
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 049578c22a5e88310800000000000000
+      internalID: 1407627368247810368
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: botella_3
+      rect:
+        serializedVersion: 2
+        x: 417
+        y: 225
+        width: 80
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4882af7b0eedc7e80800000000000000
+      internalID: -8179417766470997884
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: botella_4
+      rect:
+        serializedVersion: 2
+        x: 542
+        y: 250
+        width: 93
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1b891c6d4980679e0800000000000000
+      internalID: -1624101180269291343
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: botella_5
+      rect:
+        serializedVersion: 2
+        x: 45
+        y: 69
+        width: 83
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 612ff0992bfdb6aa0800000000000000
+      internalID: -6166589306588630506
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: botella_6
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 111
+        width: 19
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0f77c6adc91889660800000000000000
+      internalID: 7392801299008092144
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: botella_7
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 132
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ff93617d0333f3c40800000000000000
+      internalID: 5494166355275299327
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: botella_8
+      rect:
+        serializedVersion: 2
+        x: 391
+        y: 136
+        width: 14
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 157085663fccef2f0800000000000000
+      internalID: -937086326680320175
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: botella_9
+      rect:
+        serializedVersion: 2
+        x: 438
+        y: 121
+        width: 16
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 91480b838833a7200800000000000000
+      internalID: 178511795394216985
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: botella_10
+      rect:
+        serializedVersion: 2
+        x: 354
+        y: 109
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 86557613357433710800000000000000
+      internalID: 1671758309321299304
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: botella_11
+      rect:
+        serializedVersion: 2
+        x: 375
+        y: 118
+        width: 13
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6191f416c59560190800000000000000
+      internalID: -7996605835045299946
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: botella_12
+      rect:
+        serializedVersion: 2
+        x: 407
+        y: 111
+        width: 20
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9e5cc2a61bd372ed0800000000000000
+      internalID: -2438912840998009367
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: botella_13
+      rect:
+        serializedVersion: 2
+        x: 461
+        y: 114
+        width: 10
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cbf5c4c6b135dd750800000000000000
+      internalID: 6331308028398952380
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: botella_14
+      rect:
+        serializedVersion: 2
+        x: 375
+        y: 102
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4066b1fe908912e10800000000000000
+      internalID: 2171183663802967556
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: botella_15
+      rect:
+        serializedVersion: 2
+        x: 405
+        y: 102
+        width: 11
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f30695dde886f90d0800000000000000
+      internalID: -3413895029715279809
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: botella_16
+      rect:
+        serializedVersion: 2
+        x: 433
+        y: 97
+        width: 23
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d2d9d08237de6c010800000000000000
+      internalID: 1208914628844559661
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: botella_17
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 13
+        width: 107
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: abef097ec110cf740800000000000000
+      internalID: 5187022094479720122
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: botella_18
+      rect:
+        serializedVersion: 2
+        x: 287
+        y: 33
+        width: 57
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a02c193b60cb81fe0800000000000000
+      internalID: -1218016962235219446
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: botella_19
+      rect:
+        serializedVersion: 2
+        x: 331
+        y: 90
+        width: 9
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b56350e1077e41810800000000000000
+      internalID: 1735266225170495067
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: botella_20
+      rect:
+        serializedVersion: 2
+        x: 342
+        y: 65
+        width: 11
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 757590c323b5744c0800000000000000
+      internalID: -4303370647615482025
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: botella_21
+      rect:
+        serializedVersion: 2
+        x: 350
+        y: 88
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5feb8937e87341990800000000000000
+      internalID: -7416241601408090379
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: botella_22
+      rect:
+        serializedVersion: 2
+        x: 359
+        y: 67
+        width: 13
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f2938bb05666bd7a0800000000000000
+      internalID: -6351370265301599953
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: botella_23
+      rect:
+        serializedVersion: 2
+        x: 379
+        y: 80
+        width: 21
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6c696a084326ecbb0800000000000000
+      internalID: -4913882165778409786
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: botella_24
+      rect:
+        serializedVersion: 2
+        x: 424
+        y: 82
+        width: 10
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 00d8641b68b4f2410800000000000000
+      internalID: 1454464246535851264
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: botella_25
+      rect:
+        serializedVersion: 2
+        x: 438
+        y: 58
+        width: 41
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6c14f9c926c499f20800000000000000
+      internalID: 3429856577637532102
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: botella_26
+      rect:
+        serializedVersion: 2
+        x: 372
+        y: 60
+        width: 20
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 232144cea5d938f20800000000000000
+      internalID: 3423753155568210482
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: botella_27
+      rect:
+        serializedVersion: 2
+        x: 404
+        y: 76
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f1632ddb87e0f5600800000000000000
+      internalID: 459101598758614559
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: botella_28
+      rect:
+        serializedVersion: 2
+        x: 417
+        y: 69
+        width: 10
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: de3ff10c8f2838750800000000000000
+      internalID: 6306027908135646189
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: botella_29
+      rect:
+        serializedVersion: 2
+        x: 263
+        y: 57
+        width: 10
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4d1c71eeb237c0400800000000000000
+      internalID: 291734708387561940
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: botella_30
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 11
+        width: 93
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0a7930e3358ac0c40800000000000000
+      internalID: 5479939922079225760
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: botella_31
+      rect:
+        serializedVersion: 2
+        x: 377
+        y: 47
+        width: 32
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 52c5e5e66d595ef20800000000000000
+      internalID: 3451329437656570917
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: botella_32
+      rect:
+        serializedVersion: 2
+        x: 425
+        y: 55
+        width: 14
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7a53648d8769e2730800000000000000
+      internalID: 3976280966783448487
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: botella_33
+      rect:
+        serializedVersion: 2
+        x: 441
+        y: 37
+        width: 16
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a5f28ebfb9f1402f0800000000000000
+      internalID: -1007645661817458854
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: botella_34
+      rect:
+        serializedVersion: 2
+        x: 323
+        y: 18
+        width: 13
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a0b17750e53ea8d10800000000000000
+      internalID: 2128763766844103434
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: botella_35
+      rect:
+        serializedVersion: 2
+        x: 425
+        y: 18
+        width: 10
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7fde36ea5d1712990800000000000000
+      internalID: -7412518349107368457
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: botella_36
+      rect:
+        serializedVersion: 2
+        x: 425
+        y: 12
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 96fc27dcff35e6720800000000000000
+      internalID: 2841300773045981033
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: botella_37
+      rect:
+        serializedVersion: 2
+        x: 447
+        y: 16
+        width: 19
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ebd1ac928c34825b0800000000000000
+      internalID: -5392986026802537026
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: botella_38
+      rect:
+        serializedVersion: 2
+        x: 514
+        y: 9
+        width: 117
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6f7441b8b7acb5470800000000000000
+      internalID: 8384517763243460598
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: botella_39
+      rect:
+        serializedVersion: 2
+        x: 634
+        y: 12
+        width: 11
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2bc48034b61a62ed0800000000000000
+      internalID: -2439084666116354894
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      botella_0: 6611063975212234208
+      botella_1: 3839385718330263570
+      botella_10: 1671758309321299304
+      botella_11: -7996605835045299946
+      botella_12: -2438912840998009367
+      botella_13: 6331308028398952380
+      botella_14: 2171183663802967556
+      botella_15: -3413895029715279809
+      botella_16: 1208914628844559661
+      botella_17: 5187022094479720122
+      botella_18: -1218016962235219446
+      botella_19: 1735266225170495067
+      botella_2: 1407627368247810368
+      botella_20: -4303370647615482025
+      botella_21: -7416241601408090379
+      botella_22: -6351370265301599953
+      botella_23: -4913882165778409786
+      botella_24: 1454464246535851264
+      botella_25: 3429856577637532102
+      botella_26: 3423753155568210482
+      botella_27: 459101598758614559
+      botella_28: 6306027908135646189
+      botella_29: 291734708387561940
+      botella_3: -8179417766470997884
+      botella_30: 5479939922079225760
+      botella_31: 3451329437656570917
+      botella_32: 3976280966783448487
+      botella_33: -1007645661817458854
+      botella_34: 2128763766844103434
+      botella_35: -7412518349107368457
+      botella_36: 2841300773045981033
+      botella_37: -5392986026802537026
+      botella_38: 8384517763243460598
+      botella_39: -2439084666116354894
+      botella_4: -1624101180269291343
+      botella_5: -6166589306588630506
+      botella_6: 7392801299008092144
+      botella_7: 5494166355275299327
+      botella_8: -937086326680320175
+      botella_9: 178511795394216985
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
