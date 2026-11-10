@@ -21,6 +21,7 @@ public abstract class EnemyLevel1 : MonoBehaviour, IDamageable
     [Header("Drops (items que suelta al morir)")]
     public GameObject[] possibleDrops;
     [Range(0f, 1f)] public float dropChance = 0.5f;
+    // Vida que recupera el jugador al matar a este enemigo
     public float vidaAlMorir = 20f;
 
     [Header("Referencias")]
@@ -47,6 +48,7 @@ public abstract class EnemyLevel1 : MonoBehaviour, IDamageable
     int frameIndex;
     bool frameLoop;
 
+    // Coge sus componentes, configura sus físicas (sin girar y sin fricción) y empieza con la vida llena
     protected virtual void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -62,6 +64,7 @@ public abstract class EnemyLevel1 : MonoBehaviour, IDamageable
         currentHealth = maxHealth;
     }
 
+    // Avanza la animación de sprites
     protected virtual void Update()
     {
         if (dead) return;
@@ -83,6 +86,7 @@ public abstract class EnemyLevel1 : MonoBehaviour, IDamageable
         Flash();
     }
 
+    // Cura al enemigo sin pasar de su vida máxima
     public void Heal(float amount)
     {
         if (dead) return;
@@ -90,18 +94,21 @@ public abstract class EnemyLevel1 : MonoBehaviour, IDamageable
         OnHealthChanged?.Invoke(currentHealth, maxHealth);
     }
 
+    // Muere: avisa, suelta su objeto, cura al jugador y desaparece
     protected virtual void Die()
     {
         dead = true;
         OnDied?.Invoke(this);
         DropLoot();
 
+        // Premio por matarlo: el jugador recupera vida
         var jugador = GameObject.FindGameObjectWithTag(playerTag);
         if (jugador != null)
             jugador.SendMessage("Heal", vidaAlMorir, SendMessageOptions.DontRequireReceiver);
         Destroy(gameObject);
     }
 
+    // Según la probabilidad, suelta uno de sus objetos posibles (daga o corazón)
     void DropLoot()
     {
         if (possibleDrops == null || possibleDrops.Length == 0) return;
@@ -115,6 +122,7 @@ public abstract class EnemyLevel1 : MonoBehaviour, IDamageable
     protected virtual void OnCollisionEnter2D(Collision2D c) { TryHitPlayer(c.collider); }
     void OnCollisionStay2D(Collision2D c) { TryHitPlayer(c.collider); }
 
+    // Si lo que toca es el jugador y ya pasó la espera, le hace el daño por contacto
     void TryHitPlayer(Collider2D other)
     {
         if (dead || Time.time < nextContactDamageTime) return;
@@ -163,6 +171,7 @@ public abstract class EnemyLevel1 : MonoBehaviour, IDamageable
         if (spriteRenderer != null && sprite != null) spriteRenderer.sprite = sprite;
     }
 
+    // Cambia al siguiente sprite de la animación según los fotogramas por segundo
     void TickFrames()
     {
         if (frames == null || spriteRenderer == null) return;
@@ -181,6 +190,7 @@ public abstract class EnemyLevel1 : MonoBehaviour, IDamageable
         }
     }
 
+    // Parpadeo rojo al recibir un golpe
     void Flash()
     {
         if (spriteRenderer == null) return;
@@ -188,6 +198,7 @@ public abstract class EnemyLevel1 : MonoBehaviour, IDamageable
         flashRoutine = StartCoroutine(FlashRoutine());
     }
 
+    // Pone el sprite rojo un momento y lo devuelve a su color
     IEnumerator FlashRoutine()
     {
         spriteRenderer.color = new Color(1f, 0.4f, 0.4f, 1f);

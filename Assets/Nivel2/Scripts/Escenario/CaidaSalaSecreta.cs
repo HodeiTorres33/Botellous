@@ -8,6 +8,7 @@ public class CaidaSalaSecreta : MonoBehaviour
     // Pon aquí la vida máxima que tenga el jugador (la del script de Hodei)
     public int vidaMaximaJugador = 6;
 
+    // Al caer por el pozo el jugador pierde la mitad de la vida (si sube en el ascensor, no)
     void OnTriggerEnter2D(Collider2D otro)
     {
         if (!otro.CompareTag("Player"))

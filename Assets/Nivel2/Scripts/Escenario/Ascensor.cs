@@ -14,6 +14,7 @@ public class Ascensor : MonoBehaviour
     private Vector3 puntoArriba;
     private bool jugadorEncima = false;
 
+    // Guarda el punto de abajo (donde empieza) y calcula el de arriba
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -21,6 +22,7 @@ public class Ascensor : MonoBehaviour
         puntoArriba = transform.position + new Vector3(0, altura, 0);
     }
 
+    // Sube si el jugador está encima y baja si no
     void FixedUpdate()
     {
         // Si el jugador está encima subimos, si no bajamos
@@ -35,6 +37,7 @@ public class Ascensor : MonoBehaviour
         rb.MovePosition(siguientePosicion);
     }
 
+    // El jugador se sube al ascensor
     void OnTriggerEnter2D(Collider2D otro)
     {
         if (otro.CompareTag("Player"))
@@ -43,6 +46,7 @@ public class Ascensor : MonoBehaviour
         }
     }
 
+    // El jugador se baja del ascensor
     void OnTriggerExit2D(Collider2D otro)
     {
         if (otro.CompareTag("Player"))

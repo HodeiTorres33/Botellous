@@ -50,11 +50,13 @@ public class HoldInteract : MonoBehaviour
     static Font uiFont;
     static readonly List<HoldInteract> all = new List<HoldInteract>();
 
+    // Se apunta a la lista de indicadores activos (la usa IsPointerOverPrompt)
     void OnEnable()
     {
         all.Add(this);
     }
 
+    // Se quita de la lista de indicadores activos y esconde el indicador
     void OnDisable()
     {
         all.Remove(this);
@@ -63,12 +65,15 @@ public class HoldInteract : MonoBehaviour
             viewRoot.SetActive(false);
     }
 
+    // Al destruirse borra también el indicador de la pantalla
     void OnDestroy()
     {
         if (viewRoot != null)
             Destroy(viewRoot);
     }
 
+    // Cada fotograma: si el jugador está cerca y mantiene la E (o toca el círculo),
+    // llena el círculo; al llenarse avisa con OnInteracted. Si suelta, se vacía poco a poco.
     void Update()
     {
         if (player == null)
@@ -120,6 +125,7 @@ public class HoldInteract : MonoBehaviour
 
     // DETECCIÓN DEL JUGADOR
 
+    // El jugador entra en la zona: lo guardamos y esperamos a que suelte la E para empezar
     void OnTriggerEnter2D(Collider2D other)
     {
         if (!other.CompareTag(playerTag))
@@ -135,6 +141,7 @@ public class HoldInteract : MonoBehaviour
         waitRelease = true;
     }
 
+    // El jugador sale de la zona: reiniciamos el progreso y escondemos el indicador
     void OnTriggerExit2D(Collider2D other)
     {
         if (player != null &&
@@ -150,6 +157,7 @@ public class HoldInteract : MonoBehaviour
 
     // INPUT
 
+    // ¿Está pulsada la tecla E? (sistema de input nuevo o antiguo)
     static bool KeyHeld()
     {
 #if ENABLE_INPUT_SYSTEM
@@ -160,6 +168,7 @@ public class HoldInteract : MonoBehaviour
 #endif
     }
 
+    // ¿Está el ratón o un dedo pulsando encima del círculo de la E? (para el móvil)
     bool PointerHeld()
     {
 #if ENABLE_INPUT_SYSTEM
@@ -207,6 +216,7 @@ public class HoldInteract : MonoBehaviour
 #endif
     }
 
+    // ¿Está ese punto de la pantalla dentro de la zona táctil del indicador?
     bool HitTest(Vector2 screenPos)
     {
         return hitRect.Contains(
@@ -217,6 +227,7 @@ public class HoldInteract : MonoBehaviour
         );
     }
 
+    // ¿Está el punto encima de algún indicador activo? (así tocar la E no cuenta como ataque)
     public static bool IsPointerOverPrompt(Vector2 screenPos)
     {
         Vector2 gui = new Vector2(
@@ -235,6 +246,7 @@ public class HoldInteract : MonoBehaviour
 
     // POSICIÓN
 
+    // Calcula dónde va el indicador en la pantalla, encima del objeto en el mundo
     void UpdatePromptRect()
     {
         var cam = Camera.main;
@@ -273,6 +285,7 @@ public class HoldInteract : MonoBehaviour
 
     // VISTA
 
+    // Mueve el indicador a su sitio y actualiza el relleno del círculo según el progreso
     void UpdateView()
     {
         if (promptRect.width <= 0f)
@@ -313,6 +326,7 @@ public class HoldInteract : MonoBehaviour
         fillImage.enabled = progress > 0.001f;
     }
 
+    // Crea por código el indicador: círculo de fondo, anillo, relleno y la letra E
     void BuildView()
     {
         EnsureResources();
@@ -365,6 +379,7 @@ public class HoldInteract : MonoBehaviour
         );
     }
 
+    // Crea una imagen de UI hija con su sprite y color
     RectTransform NewImage(
         string childName,
         Sprite sprite,
@@ -390,6 +405,7 @@ public class HoldInteract : MonoBehaviour
         return rt;
     }
 
+    // Crea un texto de UI hijo (la letra E)
     RectTransform NewText(
         string childName,
         string content,
@@ -425,6 +441,7 @@ public class HoldInteract : MonoBehaviour
         return rt;
     }
 
+    // Ancla el elemento al centro de su padre
     static void SetAnchors(RectTransform rt)
     {
         rt.anchorMin = rt.anchorMax = Vector2.zero;
@@ -432,6 +449,7 @@ public class HoldInteract : MonoBehaviour
         rt.anchoredPosition = Vector2.zero;
     }
 
+    // Crea la primera vez un Canvas compartido donde se dibujan todos los indicadores
     static Canvas GetCanvas()
     {
         if (canvas != null)
@@ -446,6 +464,7 @@ public class HoldInteract : MonoBehaviour
         return canvas;
     }
 
+    // Prepara una sola vez la fuente y los sprites del círculo y del anillo que usan todos los indicadores
     static void EnsureResources()
     {
         if (uiFont == null)
@@ -463,6 +482,7 @@ public class HoldInteract : MonoBehaviour
             ringSprite = MakeSprite(0.39f, 0.49f);
     }
 
+    // Dibuja por código un círculo o un anillo (entre radio interior y exterior) en una textura
     static Sprite MakeSprite(float inner, float outer)
     {
         const int s = 128;

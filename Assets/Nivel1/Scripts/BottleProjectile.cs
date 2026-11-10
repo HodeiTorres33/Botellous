@@ -23,12 +23,14 @@ public class BottleProjectile : MonoBehaviour
     float spinDir = -1f;
     bool broken;
 
+    // Coge el Rigidbody y el sprite de la botella
     void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
         if (spriteRenderer == null) spriteRenderer = GetComponentInChildren<SpriteRenderer>();
     }
 
+    // La llama Enemy1L2 al lanzarla: velocidad inicial, daño y hacia qué lado gira
     public void Launch(Vector2 velocity, float newDamage, float throwDirection)
     {
         damage = newDamage;
@@ -36,6 +38,7 @@ public class BottleProjectile : MonoBehaviour
         rb.linearVelocity = velocity;
     }
 
+    // Gira la botella en el aire y la destruye si pasa demasiado tiempo sin chocar
     void Update()
     {
         if (broken) return;
@@ -46,6 +49,7 @@ public class BottleProjectile : MonoBehaviour
         if (lifeTime <= 0f) Destroy(gameObject);
     }
 
+    // Al chocar: si es el jugador le hace daño; con cualquier cosa sólida se rompe
     void OnTriggerEnter2D(Collider2D other)
     {
         if (broken || other.isTrigger) return;
@@ -60,6 +64,7 @@ public class BottleProjectile : MonoBehaviour
         StartCoroutine(Shatter());
     }
 
+    // Corrutina de romperse: para la botella, suena el cristal, enseña los trozos y la borra
     IEnumerator Shatter()
     {
         broken = true;

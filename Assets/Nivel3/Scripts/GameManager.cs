@@ -1,5 +1,7 @@
 using UnityEngine;
 
+// Trigger de la sala del jefe (nivel 3): cuando el jugador entra,
+// baja la puerta para encerrarlo y despierta al jefe.
 [RequireComponent(typeof(BoxCollider2D))]
 public class GameManager : MonoBehaviour
 {
@@ -9,6 +11,7 @@ public class GameManager : MonoBehaviour
     [SerializeField] private BossComportamiento boss;
     [SerializeField, Min(1)] private int blocksToMove = 6;
 
+    // Para que la puerta solo se mueva una vez
     private bool doorHasMoved;
     private Rigidbody2D bossRigidbody;
 
@@ -37,9 +40,11 @@ public class GameManager : MonoBehaviour
             return;
         }
 
+        // Calcula cuánto mide en el mundo bajar 'blocksToMove' casillas y mueve la puerta
         Vector3 startCell = grid.CellToWorld(Vector3Int.zero);
         Vector3 destinationCell = grid.CellToWorld(Vector3Int.down * blocksToMove);
         doorTilemap.position += destinationCell - startCell;
+        // Despierta al jefe: activa sus físicas y su comportamiento
         bossRigidbody.simulated = true;
         boss.enabled = true;
         doorHasMoved = true;

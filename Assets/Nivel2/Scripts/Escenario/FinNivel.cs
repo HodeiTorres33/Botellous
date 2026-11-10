@@ -12,6 +12,7 @@ public class FinNivel : MonoBehaviour
 
     private bool terminado = false;
 
+    // El texto final empieza escondido
     void Start()
     {
         if (textoFinal != null)
@@ -20,6 +21,7 @@ public class FinNivel : MonoBehaviour
         }
     }
 
+    // Al llegar el jugador: enseña el texto y carga el nivel 3 tras unos segundos
     void OnTriggerEnter2D(Collider2D otro)
     {
         // Solo cuenta la primera vez que entra el jugador
@@ -39,6 +41,7 @@ public class FinNivel : MonoBehaviour
         Invoke("CargarSiguienteNivel", segundosEspera);
     }
 
+    // Carga la escena del siguiente nivel
     void CargarSiguienteNivel()
     {
         // La escena tiene que estar en File > Build Profiles > Scene List

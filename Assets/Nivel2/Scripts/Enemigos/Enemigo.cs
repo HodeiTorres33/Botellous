@@ -53,6 +53,7 @@ public class Enemigo : MonoBehaviour
     private bool enterrado = false;
     private int vidaMaxima;
 
+    // Coge sus componentes, prepara la barra de vida, busca al jugador y entierra al lancero
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -84,6 +85,7 @@ public class Enemigo : MonoBehaviour
         }
     }
 
+    // Cada fotograma decide qué hace: salir del suelo, patrullar, perseguir o atacar
     void Update()
     {
         if (muerto)
@@ -130,6 +132,7 @@ public class Enemigo : MonoBehaviour
         anim.SetFloat("Velocidad", Mathf.Abs(rb.linearVelocity.x));
     }
 
+    // Anda de un lado a otro alrededor de su punto de inicio
     void Patrullar()
     {
         // Si se ha alejado demasiado del punto inicial, se da la vuelta
@@ -146,6 +149,7 @@ public class Enemigo : MonoBehaviour
         Girar();
     }
 
+    // Va hacia el jugador y ataca al llegar; el fusilero se aleja si lo tiene demasiado cerca
     void PerseguirJugador()
     {
         // Miramos hacia el jugador
@@ -186,6 +190,7 @@ public class Enemigo : MonoBehaviour
         }
     }
 
+    // Lanza la animación de ataque (el daño lo hace el evento de la animación)
     void Atacar()
     {
         atacando = true;
@@ -199,6 +204,7 @@ public class Enemigo : MonoBehaviour
         }
     }
 
+    // Devuelve true si el jugador está cerca y más o menos a su altura
     bool VeAlJugador()
     {
         if (jugador == null)
@@ -213,6 +219,7 @@ public class Enemigo : MonoBehaviour
         return distanciaX < distanciaVer && distanciaY < alturaVer;
     }
 
+    // Voltea el sprite hacia donde va
     void Girar()
     {
         // Los sprites miran a la derecha, así que si va a la izquierda los volteamos
@@ -309,6 +316,7 @@ public class Enemigo : MonoBehaviour
         }
     }
 
+    // Muere: animación, quita la barra, cura al jugador y deja de chocar
     void Morir()
     {
         muerto = true;

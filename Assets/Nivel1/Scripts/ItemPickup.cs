@@ -26,12 +26,15 @@ public abstract class ItemPickup : MonoBehaviour
     [Tooltip("Altura del indicador sobre el item.")]
     public float promptHeight = 0.8f;
 
+    // Componente que muestra la E y detecta cuándo se mantiene pulsada
     HoldInteract interact;
     Vector3 visualStart;
     bool picked;
 
+    // Lo que hace cada objeto al cogerlo (lo escriben DamageItem y HealthItem)
     protected abstract void Apply(PlayerMov player);
 
+    // Añade HoldInteract si no lo tiene y le pasa la configuración del objeto
     void Awake()
     {
         interact = GetComponent<HoldInteract>();
@@ -45,24 +48,28 @@ public abstract class ItemPickup : MonoBehaviour
         interact.promptHeight = promptHeight;
     }
 
+    // Se apunta al aviso de 'interactuado' de HoldInteract
     void OnEnable()
     {
         if (interact != null)
             interact.OnInteracted += Pickup;
     }
 
+    // Se desapunta para no recibir avisos cuando el objeto está desactivado
     void OnDisable()
     {
         if (interact != null)
             interact.OnInteracted -= Pickup;
     }
 
+    // Guarda la posición inicial del dibujo para hacerlo flotar alrededor de ella
     void Start()
     {
         if (visual != null)
             visualStart = visual.localPosition;
     }
 
+    // Hace flotar el objeto arriba y abajo con una onda seno
     void Update()
     {
         if (visual != null)
@@ -74,6 +81,7 @@ public abstract class ItemPickup : MonoBehaviour
         }
     }
 
+    // Se llama al terminar de mantener la E: aplica el efecto una sola vez y borra el objeto
     void Pickup(PlayerMov player)
     {
         if (picked)
@@ -85,7 +93,7 @@ public abstract class ItemPickup : MonoBehaviour
     }
 
     /// <summary>
-    /// Compatibilidad con PlayerController:
+    /// Lo usa PlayerMov para no atacar al pulsar la E:
     /// tocar el indicador no cuenta como ataque.
     /// </summary>
     public static bool IsPointerOverPrompt(Vector2 screenPos)

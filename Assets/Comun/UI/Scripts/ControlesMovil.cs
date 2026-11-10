@@ -9,6 +9,7 @@ public class ControlesMovil : MonoBehaviour
     // Márcalo para ver los botones en el editor mientras pruebas
     public bool verEnElOrdenador = false;
 
+    // En el PC se esconden los botones táctiles (salvo que 'verEnElOrdenador' esté marcado)
     void Start()
     {
         // Application.isMobilePlatform es true en Android, iOS y en el Device Simulator de Unity

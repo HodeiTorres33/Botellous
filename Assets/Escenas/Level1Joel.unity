@@ -918,31 +918,31 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1111111111111111104, guid: 988e23a17494598b1c0880f189030fdc, type: 3}
       propertyPath: m_GravityScale
-      value: 2.4
+      value: 1.4
       objectReference: {fileID: 0}
     - target: {fileID: 1111111111111111106, guid: 988e23a17494598b1c0880f189030fdc, type: 3}
       propertyPath: attackHeight
-      value: 6.24
+      value: 3.64
       objectReference: {fileID: 0}
     - target: {fileID: 1111111111111111106, guid: 988e23a17494598b1c0880f189030fdc, type: 3}
       propertyPath: attackRange
-      value: 3.6
+      value: 2.1
       objectReference: {fileID: 0}
     - target: {fileID: 1111111111111111106, guid: 988e23a17494598b1c0880f189030fdc, type: 3}
       propertyPath: jumpForce
-      value: 14.4
+      value: 8.4
       objectReference: {fileID: 0}
     - target: {fileID: 1111111111111111106, guid: 988e23a17494598b1c0880f189030fdc, type: 3}
       propertyPath: movementSpeed
-      value: 12
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 1111111111111111102, guid: 988e23a17494598b1c0880f189030fdc, type: 3}
       propertyPath: m_LocalScale.y
-      value: 2.4
+      value: 1.4
       objectReference: {fileID: 0}
     - target: {fileID: 1111111111111111102, guid: 988e23a17494598b1c0880f189030fdc, type: 3}
       propertyPath: m_LocalScale.x
-      value: 2.4
+      value: 1.4
       objectReference: {fileID: 0}
     - target: {fileID: 1111111111111111108, guid: 988e23a17494598b1c0880f189030fdc, type: 3}
       propertyPath: barraVida
@@ -1002,11 +1002,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5370681080491846303, guid: 988e23a17494598b1c0880f189030fdc, type: 3}
       propertyPath: m_LocalScale.x
-      value: 1.32738
+      value: 2.2755
       objectReference: {fileID: 0}
     - target: {fileID: 5370681080491846303, guid: 988e23a17494598b1c0880f189030fdc, type: 3}
       propertyPath: m_LocalScale.y
-      value: 1.50977
+      value: 2.58818
       objectReference: {fileID: 0}
     - target: {fileID: 5370681080491846303, guid: 988e23a17494598b1c0880f189030fdc, type: 3}
       propertyPath: m_LocalScale.z
@@ -1014,11 +1014,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5370681080491846303, guid: 988e23a17494598b1c0880f189030fdc, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 2.45
+      value: 4.2
       objectReference: {fileID: 0}
     - target: {fileID: 5370681080491846303, guid: 988e23a17494598b1c0880f189030fdc, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.69583
+      value: 2.90714
       objectReference: {fileID: 0}
     - target: {fileID: 6990302022472608245, guid: 988e23a17494598b1c0880f189030fdc, type: 3}
       propertyPath: m_ClearFlags

@@ -14,27 +14,33 @@ public class Enemy1L1 : EnemyLevel1
     public Sprite[] walkFrames;
     public float walkFps = 10f;
 
+    // Dirección en la que camina: 1 = derecha, -1 = izquierda
     float dir;
+    // Momento del último giro (para no girar dos veces seguidas en el mismo choque)
     float lastFlipTime = -1f;
 
+    // Prepara lo común de todos los enemigos (EnemyLevel1) y la dirección inicial
     protected override void Awake()
     {
         base.Awake();
         dir = startFacingRight ? 1f : -1f;
     }
 
+    // Mira hacia su dirección y empieza la animación de andar
     void Start()
     {
         SetFacing(dir);
         PlayFrames(walkFrames, walkFps);
     }
 
+    // Camina a velocidad constante mientras está vivo
     void FixedUpdate()
     {
         if (dead) return;
         rb.linearVelocity = new Vector2(dir * moveSpeed, rb.linearVelocity.y);
     }
 
+    // Al chocar de frente contra algo, da la vuelta (el daño al jugador lo hace la clase base)
     protected override void OnCollisionEnter2D(Collision2D c)
     {
         base.OnCollisionEnter2D(c);
@@ -51,6 +57,7 @@ public class Enemy1L1 : EnemyLevel1
         }
     }
 
+    // Da media vuelta, como mucho una vez cada 0.1 segundos
     void Flip()
     {
         if (Time.time - lastFlipTime < 0.1f) return;

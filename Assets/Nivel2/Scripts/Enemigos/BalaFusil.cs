@@ -8,6 +8,7 @@ public class BalaFusil : MonoBehaviour
     public int dano = 1;
     public float tiempoVida = 4f;
 
+    // Orienta el dibujo según hacia dónde va y programa su destrucción
     void Start()
     {
         // Si va hacia la izquierda, giramos el dibujo
@@ -20,11 +21,13 @@ public class BalaFusil : MonoBehaviour
         Destroy(gameObject, tiempoVida);
     }
 
+    // Avanza en línea recta
     void Update()
     {
         transform.position = transform.position + new Vector3(velocidad * Time.deltaTime, 0, 0);
     }
 
+    // Al chocar: daña al jugador o se rompe contra el escenario
     void OnTriggerEnter2D(Collider2D otro)
     {
         // Las balas no dañan a los enemigos

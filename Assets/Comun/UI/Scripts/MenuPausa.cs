@@ -13,6 +13,7 @@ public class MenuPausa : MonoBehaviour
 
     private bool pausado = false;
 
+    // Empieza sin pausa y guarda en qué nivel estamos
     void Start()
     {
         panelPausa.SetActive(false);
@@ -23,6 +24,7 @@ public class MenuPausa : MonoBehaviour
         PlayerPrefs.Save();
     }
 
+    // Esc abre o cierra la pausa (el botón de pausa del móvil también pulsa Esc)
     void Update()
     {
         Keyboard teclado = Keyboard.current;
@@ -39,6 +41,7 @@ public class MenuPausa : MonoBehaviour
         }
     }
 
+    // Abre el panel de pausa y congela el juego
     public void Pausar()
     {
         pausado = true;
@@ -49,6 +52,7 @@ public class MenuPausa : MonoBehaviour
         AudioListener.pause = true;
     }
 
+    // Cierra el panel y el juego sigue
     public void Reanudar()
     {
         pausado = false;
@@ -57,8 +61,10 @@ public class MenuPausa : MonoBehaviour
         AudioListener.pause = false;
     }
 
+    // Vuelve a empezar el nivel actual
     public void ReiniciarNivel()
     {
+        // Quitamos las dagas cogidas en este intento para que no se dupliquen al reiniciar
         PlayerMov jugador = FindAnyObjectByType<PlayerMov>();
         if (jugador != null)
         {
@@ -71,6 +77,7 @@ public class MenuPausa : MonoBehaviour
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 
+    // Vuelve al menú principal
     public void IrAlMenuPrincipal()
     {
         Time.timeScale = 1f;

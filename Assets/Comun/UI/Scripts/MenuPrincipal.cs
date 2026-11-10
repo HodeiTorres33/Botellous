@@ -13,6 +13,7 @@ public class MenuPrincipal : MonoBehaviour
     // Botón "Reanudar partida" del panel de opciones
     public Button botonReanudar;
 
+    // Prepara el menú: tiempo normal, paneles cerrados y botón de reanudar
     void Start()
     {
         // Por si venimos del menú de pausa con el juego congelado
@@ -29,17 +30,21 @@ public class MenuPrincipal : MonoBehaviour
         SceneManager.LoadScene(PlayerPrefs.GetString("UltimoNivel"));
     }
 
+    // Empieza una partida nueva desde el nivel 1
     public void Jugar()
     {
+        // Partida nueva: el jugador empieza sin dagas
         PlayerMov.danoExtra = 0f;
         SceneManager.LoadScene(escenaJuego);
     }
 
+    // Enseña el panel de opciones (volumen, pantalla completa, reanudar)
     public void AbrirOpciones()
     {
         panelOpciones.SetActive(true);
     }
 
+    // Enseña el panel de créditos
     public void AbrirCreditos()
     {
         panelCreditos.SetActive(true);
@@ -64,6 +69,7 @@ public class MenuPrincipal : MonoBehaviour
         Screen.fullScreen = activada;
     }
 
+    // Cierra el juego
     public void Salir()
     {
         Debug.Log("Salir del juego");

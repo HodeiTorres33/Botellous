@@ -13,6 +13,7 @@ public class BarraVida : MonoBehaviour
     // Para los enemigos: la barra no se ve hasta que les haces daño
     public bool ocultarSiEstaLlena = false;
 
+    // Rellena la barra según la vida y escribe el texto (si lo hay)
     public void Actualizar(int vidaActual, int vidaMaxima)
     {
         // fillAmount va de 0 (vacía) a 1 (llena)
@@ -29,6 +30,7 @@ public class BarraVida : MonoBehaviour
         }
     }
 
+    // Esconde la barra (por ejemplo, cuando muere el enemigo)
     public void Ocultar()
     {
         gameObject.SetActive(false);

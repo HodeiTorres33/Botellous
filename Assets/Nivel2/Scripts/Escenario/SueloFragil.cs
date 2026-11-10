@@ -16,6 +16,7 @@ public class SueloFragil : MonoBehaviour
     private bool roto = false;
     private float contador = 0f;
 
+    // Guarda su posición, sus dibujos y el collider que hace de suelo
     void Start()
     {
         posicionInicial = transform.position;
@@ -25,6 +26,7 @@ public class SueloFragil : MonoBehaviour
         sueloSolido = GetComponent<BoxCollider2D>();
     }
 
+    // Mientras tiembla, se mueve un poco a los lados y al acabar el tiempo se rompe
     void Update()
     {
         if (temblando)
@@ -41,6 +43,7 @@ public class SueloFragil : MonoBehaviour
         }
     }
 
+    // Al pisarlo el jugador empieza a temblar
     void OnTriggerEnter2D(Collider2D otro)
     {
         if (!temblando && !roto && otro.CompareTag("Player"))
@@ -50,6 +53,7 @@ public class SueloFragil : MonoBehaviour
         }
     }
 
+    // Se rompe: quita el suelo, lo esconde y programa su vuelta
     void Romper()
     {
         temblando = false;
@@ -66,6 +70,7 @@ public class SueloFragil : MonoBehaviour
         Invoke("Volver", tiempoParaVolver);
     }
 
+    // Vuelve a aparecer y a ser sólido
     void Volver()
     {
         roto = false;

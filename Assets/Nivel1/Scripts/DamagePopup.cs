@@ -16,6 +16,7 @@ public class DamagePopup : MonoBehaviour
     Color[] baseColors;
     float timer;
 
+    // Crea un número de daño en 'position' (un poco desplazado a un lado para que no se tapen)
     public static void Show(Vector3 position, float amount, Color color)
     {
         position.x += Random.Range(-0.15f, 0.15f);
@@ -27,6 +28,7 @@ public class DamagePopup : MonoBehaviour
         popup.Build(amount.ToString("0.#", CultureInfo.InvariantCulture), color);
     }
 
+    // Monta el texto: una sombra negra detrás y el número de color delante
     void Build(string label, Color color)
     {
         if (font == null)
@@ -43,6 +45,7 @@ public class DamagePopup : MonoBehaviour
         transform.localScale = Vector3.one * 1.3f;
     }
 
+    // Crea un objeto hijo con un TextMesh configurado (fuente, tamaño, color y orden de dibujo)
     TextMesh Make(string childName, string label, Color color, int order, Vector3 localPos)
     {
         var child = new GameObject(childName);
@@ -65,6 +68,7 @@ public class DamagePopup : MonoBehaviour
         return tm;
     }
 
+    // Sube poco a poco, vuelve a su tamaño normal y se borra al acabar su tiempo
     void Update()
     {
         timer += Time.deltaTime;

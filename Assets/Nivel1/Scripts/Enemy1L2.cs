@@ -33,29 +33,35 @@ public class Enemy1L2 : EnemyLevel1
     public Sprite[] throwFrames;
     public float throwFps = 10f;
 
+    // Referencias al jugador (se buscan por su etiqueta)
     Transform player;
     Collider2D playerCollider;
+    // Tiempo que falta para poder lanzar otra botella
     float cooldownTimer;
     bool throwing;
 
+    // Prepara lo común de los enemigos y hacia dónde mira al empezar
     protected override void Awake()
     {
         base.Awake();
         facing = startFacingRight ? 1f : -1f;
     }
 
+    // Mira hacia su lado inicial y enseña el sprite de estar quieto
     void Start()
     {
         SetFacing(facing);
         ShowSprite(idleSprite);
     }
 
+    // No se mueve en horizontal, solo le afecta la gravedad
     void FixedUpdate()
     {
         if (dead) return;
         rb.linearVelocity = new Vector2(0f, rb.linearVelocity.y); // se queda en su sitio
     }
 
+    // Si ve al jugador, se gira hacia él y lanza una botella cuando acaba la espera
     protected override void Update()
     {
         base.Update();
@@ -72,6 +78,7 @@ public class Enemy1L2 : EnemyLevel1
         }
     }
 
+    // Busca al jugador por su etiqueta y guarda su collider
     void FindPlayer()
     {
         var go = GameObject.FindGameObjectWithTag(playerTag);
@@ -80,10 +87,13 @@ public class Enemy1L2 : EnemyLevel1
         playerCollider = go.GetComponent<Collider2D>();
     }
 
+    // Posición de los ojos (cambia de lado según hacia dónde mira)
     Vector2 EyePosition => (Vector2)transform.position + new Vector2(eyeOffset.x * facing, eyeOffset.y);
 
+    // Centro del jugador, que es adonde apunta
     Vector2 PlayerCenter => playerCollider != null ? (Vector2)playerCollider.bounds.center : (Vector2)player.position;
 
+    // Ve al jugador si está cerca, dentro de su cono de visión y sin paredes en medio
     bool CanSeePlayer()
     {
         Vector2 eye = EyePosition;
@@ -106,6 +116,7 @@ public class Enemy1L2 : EnemyLevel1
         return false;
     }
 
+    // Corrutina de lanzar: animación, suelta la botella en el momento justo y espera para el siguiente
     IEnumerator ThrowRoutine()
     {
         throwing = true;
@@ -122,6 +133,7 @@ public class Enemy1L2 : EnemyLevel1
         ShowSprite(idleSprite);
     }
 
+    // Crea la botella y le da la velocidad justa para que caiga donde está el jugador
     void ThrowBottle()
     {
         if (bottlePrefab == null) return;
@@ -146,6 +158,7 @@ public class Enemy1L2 : EnemyLevel1
             proj.Launch(velocity, bottleDamage, facing);
     }
 
+    // Solo en el editor: dibuja el cono de visión en amarillo al seleccionar el enemigo
     void OnDrawGizmosSelected()
     {
         float f = Application.isPlaying ? facing : (startFacingRight ? 1f : -1f);

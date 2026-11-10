@@ -7,6 +7,7 @@ public class ZonaMuerte : MonoBehaviour
     // Daño enorme para que mate sin importar la vida que tenga
     public int dano = 999;
 
+    // Mata a quien caiga aquí (jugador o enemigo)
     void OnTriggerEnter2D(Collider2D otro)
     {
         if (otro.CompareTag("Player") || otro.CompareTag("Enemigo"))
