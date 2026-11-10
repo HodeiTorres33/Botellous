@@ -39,8 +39,17 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: Plataforms
+    uniqueID: 3841292513
+    locked: 0
+  - name: Background
+    uniqueID: 186779377
+    locked: 0
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Objects
+    uniqueID: 3931446857
     locked: 0
   m_RenderingLayers:
   - Default
