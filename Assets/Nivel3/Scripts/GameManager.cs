@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 
 // Trigger de la sala del jefe (nivel 3): cuando el jugador entra,
@@ -10,6 +11,11 @@ public class GameManager : MonoBehaviour
     [SerializeField] private GridLayout grid;
     [SerializeField] private BossComportamiento boss;
     [SerializeField, Min(1)] private int blocksToMove = 6;
+
+    private GameObject finJuegoCanvas;
+
+    private Collider2D bossCollider;
+    private bool finJuegoMostrado;
 
     // Para que la puerta solo se mueva una vez
     private bool doorHasMoved;
@@ -30,6 +36,19 @@ public class GameManager : MonoBehaviour
         bossRigidbody = boss.GetComponent<Rigidbody2D>();
         bossRigidbody.simulated = false;
         boss.enabled = false;
+
+        bossCollider = boss.GetComponent<Collider2D>();
+
+        finJuegoCanvas = GameObject.FindGameObjectWithTag("FinJuego");
+
+        if (finJuegoCanvas == null)
+        {
+            Debug.LogError("No se encontró ningún objeto con el tag FinJuego.", this);
+            enabled = false;
+            return;
+        }
+
+        finJuegoCanvas.SetActive(false);
     }
 
     // Al entrar el jugador, mueve el Tilemap y activa al jefe una sola vez.
@@ -49,4 +68,30 @@ public class GameManager : MonoBehaviour
         boss.enabled = true;
         doorHasMoved = true;
     }
+
+    private void Update()
+    {
+        if (!finJuegoMostrado && !bossCollider.enabled)
+        {
+            MostrarFinJuego();
+        }
+    }
+
+    private void MostrarFinJuego()
+    {
+        finJuegoMostrado = true;
+        finJuegoCanvas.SetActive(true);
+        StartCoroutine(TerminarJuego());
+    }
+
+    private IEnumerator TerminarJuego()
+    {
+        yield return new WaitForSecondsRealtime(3f);
+
+    #if UNITY_EDITOR
+            UnityEditor.EditorApplication.isPlaying = false;
+    #else
+            Application.Quit();
+    #endif
+        }
 }
