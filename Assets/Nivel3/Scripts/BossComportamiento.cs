@@ -21,6 +21,8 @@ public class BossComportamiento : MonoBehaviour
     [Header("Referencias")]
     [SerializeField] private Transform player;
     [SerializeField] private GameObject toxicGasZone;
+    // Barra de vida encima del jefe (prefab BarraVidaEnemigo). Si se deja vacía se busca entre sus hijos.
+    [SerializeField] private BarraVida barraVida;
 
     [Header("Objetos Clave del Jugador")]
     [SerializeField] private bool playerHasSmokeFilter;
@@ -59,6 +61,12 @@ public class BossComportamiento : MonoBehaviour
 
         rb.position = new Vector2(Mathf.Clamp(rb.position.x, minX, maxX), rb.position.y);
         currentHealth = maxHealth;
+
+        if (barraVida == null)
+        {
+            barraVida = GetComponentInChildren<BarraVida>(true);
+        }
+        ActualizarBarraVida();
 
         if (toxicGasZone == null)
         {
@@ -319,6 +327,7 @@ public class BossComportamiento : MonoBehaviour
         }
 
         currentHealth = Mathf.Max(0f, currentHealth - amount);
+        ActualizarBarraVida();
 
         if (!isPhase2 && currentHealth <= maxHealth * 0.5f)
         {
@@ -338,10 +347,25 @@ public class BossComportamiento : MonoBehaviour
         }
     }
 
+    // Pasa la vida a la barra. BarraVida trabaja con enteros, así que redondeamos hacia arriba
+    // para que no se vea vacía mientras al jefe le quede algo de vida.
+    private void ActualizarBarraVida()
+    {
+        if (barraVida != null)
+        {
+            barraVida.Actualizar(Mathf.CeilToInt(currentHealth), Mathf.CeilToInt(maxHealth));
+        }
+    }
+
     // Termina el combate y limpia las acciones que sigan activas.
     private void Die()
     {
         isDead = true;
+
+        if (barraVida != null)
+        {
+            barraVida.Ocultar();
+        }
         anim.SetTrigger(DieHash);
         rb.linearVelocity = Vector2.zero;
 

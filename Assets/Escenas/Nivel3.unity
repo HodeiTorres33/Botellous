@@ -37721,7 +37721,8 @@ Transform:
   m_LocalPosition: {x: 66.5, y: -8.4, z: 0}
   m_LocalScale: {x: 3, y: 3, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 1990001002}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!50 &2000965794
@@ -38018,6 +38019,48 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!1001 &1990001001
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 2000965793}
+    m_Modifications:
+    - target: {fileID: 6534166966009565437, guid: bafd99db4f4dfe247a7d4307a8220092, type: 3}
+      propertyPath: m_Name
+      value: BarraVidaJefe
+      objectReference: {fileID: 0}
+    - target: {fileID: 352842720733987473, guid: bafd99db4f4dfe247a7d4307a8220092, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 352842720733987473, guid: bafd99db4f4dfe247a7d4307a8220092, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.05
+      objectReference: {fileID: 0}
+    - target: {fileID: 352842720733987473, guid: bafd99db4f4dfe247a7d4307a8220092, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 352842720733987473, guid: bafd99db4f4dfe247a7d4307a8220092, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 352842720733987473, guid: bafd99db4f4dfe247a7d4307a8220092, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 1.05
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: bafd99db4f4dfe247a7d4307a8220092, type: 3}
+--- !u!224 &1990001002 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 352842720733987473, guid: bafd99db4f4dfe247a7d4307a8220092, type: 3}
+  m_PrefabInstance: {fileID: 1990001001}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
