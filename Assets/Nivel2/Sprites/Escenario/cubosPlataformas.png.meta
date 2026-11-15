@@ -1,0 +1,1198 @@
+fileFormatVersion: 2
+guid: 57396d62d79be5b4989a4521b30c5bfc
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 3371562355655626308
+    second: cubosPlataformas_0
+  - first:
+      213: -180797262283306412
+    second: cubosPlataformas_1
+  - first:
+      213: 3776971375381546043
+    second: cubosPlataformas_2
+  - first:
+      213: 7813308908280299952
+    second: cubosPlataformas_3
+  - first:
+      213: -7315465645654163093
+    second: cubosPlataformas_4
+  - first:
+      213: 357966373465653877
+    second: cubosPlataformas_5
+  - first:
+      213: 3435924787728809693
+    second: cubosPlataformas_6
+  - first:
+      213: -7362292054858627711
+    second: cubosPlataformas_7
+  - first:
+      213: -3742290342212048238
+    second: cubosPlataformas_8
+  - first:
+      213: 8084777019437578418
+    second: cubosPlataformas_9
+  - first:
+      213: 4456641388186578355
+    second: cubosPlataformas_10
+  - first:
+      213: 2829464224266410743
+    second: cubosPlataformas_11
+  - first:
+      213: -4072537594329422813
+    second: cubosPlataformas_12
+  - first:
+      213: 137202177935849576
+    second: cubosPlataformas_13
+  - first:
+      213: 6884485655347006961
+    second: cubosPlataformas_14
+  - first:
+      213: 5449486970474419963
+    second: cubosPlataformas_15
+  - first:
+      213: 7139860072406292270
+    second: cubosPlataformas_16
+  - first:
+      213: 5601062957692817009
+    second: cubosPlataformas_17
+  - first:
+      213: 7664179912720654225
+    second: cubosPlataformas_18
+  - first:
+      213: 1932135766327396284
+    second: cubosPlataformas_19
+  - first:
+      213: 8847841287424088075
+    second: cubosPlataformas_20
+  - first:
+      213: 2561926767699996467
+    second: cubosPlataformas_21
+  - first:
+      213: -1756444446519264067
+    second: cubosPlataformas_22
+  - first:
+      213: -2153012299315322847
+    second: cubosPlataformas_23
+  - first:
+      213: -4679010939752804867
+    second: cubosPlataformas_24
+  - first:
+      213: 5801067877421857287
+    second: cubosPlataformas_25
+  - first:
+      213: 1878694734371986821
+    second: cubosPlataformas_26
+  - first:
+      213: -8187978277400534455
+    second: cubosPlataformas_27
+  - first:
+      213: 9144378376362333887
+    second: cubosPlataformas_28
+  - first:
+      213: 1121789683967387497
+    second: cubosPlataformas_29
+  - first:
+      213: -5422174321627697585
+    second: cubosPlataformas_30
+  - first:
+      213: 3690199549316864743
+    second: cubosPlataformas_31
+  - first:
+      213: -1868668614699790979
+    second: cubosPlataformas_32
+  - first:
+      213: 7033420225263332146
+    second: cubosPlataformas_33
+  - first:
+      213: 694549228200978933
+    second: cubosPlataformas_34
+  - first:
+      213: 1365617988117883406
+    second: cubosPlataformas_35
+  - first:
+      213: -4176005079459020463
+    second: cubosPlataformas_36
+  - first:
+      213: -4939255988407263881
+    second: cubosPlataformas_37
+  - first:
+      213: 7916955847926364934
+    second: cubosPlataformas_38
+  - first:
+      213: -6079926129438299599
+    second: cubosPlataformas_39
+  - first:
+      213: 772593557288879055
+    second: cubosPlataformas_40
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationMethod: 0
+  spriteTessellationDetail: -1
+  spriteGeometrySubdivision: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: cubosPlataformas_0
+      rect:
+        serializedVersion: 2
+        x: 44
+        y: 976
+        width: 159
+        height: 158
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 44ecee269123ace20800000000000000
+      internalID: 3371562355655626308
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cubosPlataformas_1
+      rect:
+        serializedVersion: 2
+        x: 225
+        y: 976
+        width: 163
+        height: 158
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 45a8d3d09ddad7df0800000000000000
+      internalID: -180797262283306412
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cubosPlataformas_2
+      rect:
+        serializedVersion: 2
+        x: 409
+        y: 976
+        width: 161
+        height: 158
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b348f64647f7a6430800000000000000
+      internalID: 3776971375381546043
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cubosPlataformas_3
+      rect:
+        serializedVersion: 2
+        x: 589
+        y: 976
+        width: 188
+        height: 158
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0b1417e2e037e6c60800000000000000
+      internalID: 7813308908280299952
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cubosPlataformas_4
+      rect:
+        serializedVersion: 2
+        x: 821
+        y: 976
+        width: 162
+        height: 158
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b61c53811ce3a7a90800000000000000
+      internalID: -7315465645654163093
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cubosPlataformas_5
+      rect:
+        serializedVersion: 2
+        x: 1004
+        y: 976
+        width: 161
+        height: 158
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 57284f32580c7f400800000000000000
+      internalID: 357966373465653877
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cubosPlataformas_6
+      rect:
+        serializedVersion: 2
+        x: 1190
+        y: 976
+        width: 157
+        height: 158
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ddef88fd36bdeaf20800000000000000
+      internalID: 3435924787728809693
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cubosPlataformas_7
+      rect:
+        serializedVersion: 2
+        x: 44
+        y: 792
+        width: 159
+        height: 157
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 18588791262e3d990800000000000000
+      internalID: -7362292054858627711
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cubosPlataformas_8
+      rect:
+        serializedVersion: 2
+        x: 225
+        y: 792
+        width: 163
+        height: 157
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 29a6312e2c6b01cc0800000000000000
+      internalID: -3742290342212048238
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cubosPlataformas_9
+      rect:
+        serializedVersion: 2
+        x: 409
+        y: 792
+        width: 161
+        height: 157
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2b871db3dd5e23070800000000000000
+      internalID: 8084777019437578418
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cubosPlataformas_10
+      rect:
+        serializedVersion: 2
+        x: 589
+        y: 792
+        width: 188
+        height: 157
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3bd2a22fabb29dd30800000000000000
+      internalID: 4456641388186578355
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cubosPlataformas_11
+      rect:
+        serializedVersion: 2
+        x: 821
+        y: 792
+        width: 162
+        height: 157
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7fa531888b6444720800000000000000
+      internalID: 2829464224266410743
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cubosPlataformas_12
+      rect:
+        serializedVersion: 2
+        x: 1004
+        y: 792
+        width: 161
+        height: 157
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 324229b92a07b77c0800000000000000
+      internalID: -4072537594329422813
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cubosPlataformas_13
+      rect:
+        serializedVersion: 2
+        x: 1190
+        y: 792
+        width: 157
+        height: 157
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 868b64667a077e100800000000000000
+      internalID: 137202177935849576
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cubosPlataformas_14
+      rect:
+        serializedVersion: 2
+        x: 44
+        y: 608
+        width: 159
+        height: 162
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1fd0b3c5a3b9a8f50800000000000000
+      internalID: 6884485655347006961
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cubosPlataformas_15
+      rect:
+        serializedVersion: 2
+        x: 225
+        y: 608
+        width: 163
+        height: 162
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bf65f3be68770ab40800000000000000
+      internalID: 5449486970474419963
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cubosPlataformas_16
+      rect:
+        serializedVersion: 2
+        x: 409
+        y: 608
+        width: 161
+        height: 162
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e2795c148e0e51360800000000000000
+      internalID: 7139860072406292270
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cubosPlataformas_17
+      rect:
+        serializedVersion: 2
+        x: 589
+        y: 608
+        width: 188
+        height: 162
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 17e01e59519fabd40800000000000000
+      internalID: 5601062957692817009
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cubosPlataformas_18
+      rect:
+        serializedVersion: 2
+        x: 821
+        y: 608
+        width: 162
+        height: 162
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 19f16682603ac5a60800000000000000
+      internalID: 7664179912720654225
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cubosPlataformas_19
+      rect:
+        serializedVersion: 2
+        x: 1004
+        y: 608
+        width: 161
+        height: 162
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cb785c91e3350da10800000000000000
+      internalID: 1932135766327396284
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cubosPlataformas_20
+      rect:
+        serializedVersion: 2
+        x: 1190
+        y: 608
+        width: 157
+        height: 162
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b0892f5e5c8d9ca70800000000000000
+      internalID: 8847841287424088075
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cubosPlataformas_21
+      rect:
+        serializedVersion: 2
+        x: 44
+        y: 425
+        width: 159
+        height: 162
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 33fa25152dacd8320800000000000000
+      internalID: 2561926767699996467
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cubosPlataformas_22
+      rect:
+        serializedVersion: 2
+        x: 225
+        y: 425
+        width: 163
+        height: 162
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dbcf289f41bdf97e0800000000000000
+      internalID: -1756444446519264067
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cubosPlataformas_23
+      rect:
+        serializedVersion: 2
+        x: 409
+        y: 425
+        width: 161
+        height: 162
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 120634e88b6fe12e0800000000000000
+      internalID: -2153012299315322847
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cubosPlataformas_24
+      rect:
+        serializedVersion: 2
+        x: 589
+        y: 425
+        width: 188
+        height: 162
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dfd0edb3750d01fb0800000000000000
+      internalID: -4679010939752804867
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cubosPlataformas_25
+      rect:
+        serializedVersion: 2
+        x: 821
+        y: 425
+        width: 162
+        height: 162
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 70ab8a7cf78818050800000000000000
+      internalID: 5801067877421857287
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cubosPlataformas_26
+      rect:
+        serializedVersion: 2
+        x: 1004
+        y: 425
+        width: 161
+        height: 162
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 58d93ab38e6721a10800000000000000
+      internalID: 1878694734371986821
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cubosPlataformas_27
+      rect:
+        serializedVersion: 2
+        x: 44
+        y: 218
+        width: 159
+        height: 161
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9422de273257e5e80800000000000000
+      internalID: -8187978277400534455
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cubosPlataformas_28
+      rect:
+        serializedVersion: 2
+        x: 225
+        y: 218
+        width: 163
+        height: 161
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fb617de2fab57ee70800000000000000
+      internalID: 9144378376362333887
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cubosPlataformas_29
+      rect:
+        serializedVersion: 2
+        x: 409
+        y: 218
+        width: 161
+        height: 161
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 967e29926c5619f00800000000000000
+      internalID: 1121789683967387497
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cubosPlataformas_30
+      rect:
+        serializedVersion: 2
+        x: 589
+        y: 218
+        width: 188
+        height: 161
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f4ee221be2190c4b0800000000000000
+      internalID: -5422174321627697585
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cubosPlataformas_31
+      rect:
+        serializedVersion: 2
+        x: 821
+        y: 218
+        width: 162
+        height: 161
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7ea965740f8363330800000000000000
+      internalID: 3690199549316864743
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cubosPlataformas_32
+      rect:
+        serializedVersion: 2
+        x: 1004
+        y: 218
+        width: 161
+        height: 161
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d7dc5e9abc72116e0800000000000000
+      internalID: -1868668614699790979
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cubosPlataformas_33
+      rect:
+        serializedVersion: 2
+        x: 1190
+        y: 218
+        width: 157
+        height: 161
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 23b6ed22e6abb9160800000000000000
+      internalID: 7033420225263332146
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cubosPlataformas_34
+      rect:
+        serializedVersion: 2
+        x: 44
+        y: 30
+        width: 159
+        height: 166
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5f9e0f9d7d883a900800000000000000
+      internalID: 694549228200978933
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cubosPlataformas_35
+      rect:
+        serializedVersion: 2
+        x: 225
+        y: 30
+        width: 163
+        height: 166
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e0a66a82356a3f210800000000000000
+      internalID: 1365617988117883406
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cubosPlataformas_36
+      rect:
+        serializedVersion: 2
+        x: 409
+        y: 30
+        width: 161
+        height: 166
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1514e927189db06c0800000000000000
+      internalID: -4176005079459020463
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cubosPlataformas_37
+      rect:
+        serializedVersion: 2
+        x: 589
+        y: 30
+        width: 188
+        height: 166
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 77d934c09dc347bb0800000000000000
+      internalID: -4939255988407263881
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cubosPlataformas_38
+      rect:
+        serializedVersion: 2
+        x: 821
+        y: 30
+        width: 162
+        height: 166
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 60b3a1ad56daedd60800000000000000
+      internalID: 7916955847926364934
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cubosPlataformas_39
+      rect:
+        serializedVersion: 2
+        x: 1004
+        y: 30
+        width: 161
+        height: 166
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 13ae63ae563cf9ba0800000000000000
+      internalID: -6079926129438299599
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cubosPlataformas_40
+      rect:
+        serializedVersion: 2
+        x: 1190
+        y: 30
+        width: 157
+        height: 166
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fc385f93fbdc8ba00800000000000000
+      internalID: 772593557288879055
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      cubosPlataformas_0: 3371562355655626308
+      cubosPlataformas_1: -180797262283306412
+      cubosPlataformas_10: 4456641388186578355
+      cubosPlataformas_11: 2829464224266410743
+      cubosPlataformas_12: -4072537594329422813
+      cubosPlataformas_13: 137202177935849576
+      cubosPlataformas_14: 6884485655347006961
+      cubosPlataformas_15: 5449486970474419963
+      cubosPlataformas_16: 7139860072406292270
+      cubosPlataformas_17: 5601062957692817009
+      cubosPlataformas_18: 7664179912720654225
+      cubosPlataformas_19: 1932135766327396284
+      cubosPlataformas_2: 3776971375381546043
+      cubosPlataformas_20: 8847841287424088075
+      cubosPlataformas_21: 2561926767699996467
+      cubosPlataformas_22: -1756444446519264067
+      cubosPlataformas_23: -2153012299315322847
+      cubosPlataformas_24: -4679010939752804867
+      cubosPlataformas_25: 5801067877421857287
+      cubosPlataformas_26: 1878694734371986821
+      cubosPlataformas_27: -8187978277400534455
+      cubosPlataformas_28: 9144378376362333887
+      cubosPlataformas_29: 1121789683967387497
+      cubosPlataformas_3: 7813308908280299952
+      cubosPlataformas_30: -5422174321627697585
+      cubosPlataformas_31: 3690199549316864743
+      cubosPlataformas_32: -1868668614699790979
+      cubosPlataformas_33: 7033420225263332146
+      cubosPlataformas_34: 694549228200978933
+      cubosPlataformas_35: 1365617988117883406
+      cubosPlataformas_36: -4176005079459020463
+      cubosPlataformas_37: -4939255988407263881
+      cubosPlataformas_38: 7916955847926364934
+      cubosPlataformas_39: -6079926129438299599
+      cubosPlataformas_4: -7315465645654163093
+      cubosPlataformas_40: 772593557288879055
+      cubosPlataformas_5: 357966373465653877
+      cubosPlataformas_6: 3435924787728809693
+      cubosPlataformas_7: -7362292054858627711
+      cubosPlataformas_8: -3742290342212048238
+      cubosPlataformas_9: 8084777019437578418
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
